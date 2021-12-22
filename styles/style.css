@@ -10,6 +10,13 @@
         
         header {
             background-color: rgba(72, 72, 72, 255);
+            grid-template-columns: repeat(2, 20% 80%);
+            grid-template-areas: "logo menunav";
+            display: grid;
+            gap: 1rem;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
             font-size: 1.5rem;
             text-transform: uppercase;
         }
