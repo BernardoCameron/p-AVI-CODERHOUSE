@@ -45,61 +45,14 @@
         }
         /* -----------DESTACADOS ------------*/
         /* -----------DESTACADOS ------------*/
-        /* -----------ENCUENTRENOS ------------*/
-        
-        .encuentrenos {
-            display: grid;
-            grid-template-columns: repeat(3, 300px);
-            grid-template-rows: repeat(2, 350px);
-            grid-column-gap: 7%;
-            grid-row-gap: 7%;
-            justify-content: center;
-            color: whitesmoke;
-        }
-        
-        .CajaUbi {
-            grid-area: 1 / 1 / 2 / 2;
-            background-color: rgba(255, 255, 255, 0.267);
-            text-align: center;
-        }
-        
-        .CajaContacto {
-            grid-area: 1 / 2 / 1 / 3;
-            background-color: rgba(255, 255, 255, 0.267);
-            text-align: center;
-        }
-        
-        .CajaHora {
-            grid-area: 1 / 3 / 1 / 3;
-            background-color: rgba(255, 255, 255, 0.267);
-            text-align: center;
-        }
-        
-        .map {
-            grid-area: 2 / 2 / 3 /3;
-            text-align: center;
-            justify-content: center;
-        }
-        
-        .map p {
-            margin: 20px;
-        }
         /* -----------DESTACADOS ------------*/
         
-        #formulario {
-            top: 30%;
-            right: 30%;
-            position: absolute;
-            width: 370px;
+        .formulario {
+            width: 400px;
+            height: 400px;
             margin: auto;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
-        
-        #formulario h2 {
             text-align: center;
+            color: white;
         }
         
         input textarea {
@@ -107,67 +60,3 @@
             margin-bottom: 10px;
             box-sizing: border-box;
         }
-        
-        .footer {
-            background-color: rgba(72, 72, 72, 255);
-            bottom: 0%;
-            height: 100px;
-            align-items: center;
-            justify-content: center;
-            color: whitesmoke;
-        }
-        
-        @media screen and (max-width: 320px) {
-            header {
-                background-color: rgba(72, 72, 72, 255);
-                display: grid;
-                grid-template-rows: 20px, 50px;
-                font-size: 13px;
-            }
-            .logo {
-                width: 80px;
-                height: 80px;
-            }
-            .menunav ul li {
-                display: block;
-            }
-            .encuentrenos {
-                display: block;
-            }
-            .CajaUbi {
-                width: 200px;
-                height: 300px;
-                margin: 60px
-            }
-            .CajaContacto {
-                width: 200px;
-                height: 300px;
-                margin: 60px
-            }
-            .CajaHora {
-                width: 200px;
-                height: 300px;
-                margin: 60px
-            }
-            .map {
-                width: 200px;
-                height: 300px;
-                margin: 60px
-            }
-            .footer {
-                background-color: rgba(72, 72, 72, 255);
-                height: 30px;
-                bottom: 100%;
-                text-align: center;
-            }
-            .destacados h2 {
-                font-size: 15px;
-                text-align: justify;
-                text-transform: uppercase;
-            }
-            .destacados img {
-                width: 320px;
-                height: 320px;
-            }
-        }
-        /*---He estado intentado usar el Media Query para hacer responsive la entrega pero no me funciona ningun comando, el unico que funciona es el background color... Algo debe estar chocando, pero no se que*/
