@@ -1,26 +1,19 @@
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        body {
-            background-image: url("../imagenes/1PLANTILLA\ STORY.png");
-            background-size: 100%;
-        }
-        
-        header {
-            background-color: rgba(72, 72, 72, 255);
-            font-size: 1.5rem;
-            text-transform: uppercase;
-        }
-        /* -----------DESTACADOS ------------*/
-        /* -----------DESTACADOS ------------*/
-        /* -----------DESTACADOS ------------*/
-        
-        .formulario {
-            width: 400px;
-            height: 400px;
-            margin: auto;
-            text-align: center;
-            color: white;
-        }
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background-image: url("../imagenes/1PLANTILLA STORY.png");
+  background-size: 100%; }
+
+header {
+  background-color: #484848;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.formulario {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  color: white; }
