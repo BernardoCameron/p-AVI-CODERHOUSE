@@ -16,4 +16,50 @@ header {
   height: 400px;
   margin: auto;
   text-align: center;
-  color: white; }
+  color: #dbdbdb; }
+
+footer {
+  margin-top: 60px;
+  background-color: #484848;
+  color: #dbdbdb;
+  width: 100%; }
+  footer p {
+    color: #dbdbdb;
+    font-size: 14px;
+    margin-top: 20px; }
+  footer h3 {
+    font-size: 20px;
+    color: #dbdbdb; }
+  footer .row {
+    margin-top: 20px;
+    display: flex; }
+    footer .row img {
+      width: 40px;
+      height: 40px; }
+  footer .row2 {
+    margin-top: 20px;
+    display: flex; }
+    footer .row2 img {
+      width: 40px;
+      height: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+  footer label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #dbdbdb; }
+  footer .container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; }
+  footer .container-body {
+    display: flex; }
+  footer .column1 {
+    max-width: 400px;
+    margin: auto; }
+  footer .column2 {
+    max-width: 400px;
+    margin: auto; }
+  footer .column3 {
+    max-width: 400px;
+    margin: auto; }

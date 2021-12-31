@@ -1,3 +1,5 @@
+$colorbg:rgba(72, 72, 72, 255);
+$letra: rgb(219, 219, 219);
 * {
     padding: 0px;
     margin: 0px;
@@ -9,7 +11,7 @@ body {
 }
 
 header {
-    background-color: rgba(72, 72, 72, 255);
+    background-color: $colorbg;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -19,5 +21,64 @@ header {
     height: 400px;
     margin: auto;
     text-align: center;
-    color: white;
+    color: $letra;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: $colorbg;
+    color: $letra;
+    width: 100%;
+    p {
+        color: $letra;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 20px;
+        color: $letra;
+    }
+    .row {
+        margin-top: 20px;
+        display: flex;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .row2 {
+        margin-top: 20px;
+        display: flex;
+        img {
+            width: 40px;
+            height: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    label {
+        margin-top: 10px;
+        margin-left: 20px;
+        color: $letra;
+    }
+    .container-footer-all {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .container-body {
+        display: flex;
+    }
+    .column1 {
+        max-width: 400px;
+        margin: auto;
+    }
+    .column2 {
+        max-width: 400px;
+        margin: auto;
+    }
+    .column3 {
+        max-width: 400px;
+        margin: auto;
+    }
 }
