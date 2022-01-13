@@ -1,13 +1,39 @@
-$colorbg:rgba(72, 72, 72, 255);
-$letra: rgb(219, 219, 219);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+$colorbg:rgba(72,
+72,
+72,
+255);
+$letra: rgb(219,
+219,
+219);
+$letra2: rgb(0,
+0,
+0);
 * {
     padding: 0px;
     margin: 0px;
 }
 
+$colores:( 'primary': rgb(219, 219, 219),
+'secondary': rgb(0, 0, 0),
+);
+// Mixins
+@mixin font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+@mixin caja_perso {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
 body {
-    background-image: url("../imagenes/1PLANTILLA\ STORY.png");
-    background-size: 100%;
+    background-image: radial-gradient(circle, #ffffff, #f8f6f8, #f2edf0, #ece4e6, #e7dbdb);
+    border: 0px;
 }
 
 header {
@@ -17,53 +43,110 @@ header {
 }
 
 .formulario {
-    width: 400px;
-    height: 400px;
     margin: auto;
     text-align: center;
-    color: $letra;
+    color: map-get($map: $colores, $key: 'secondary');
+    ;
+}
+
+.mainc {
+    display: flex;
+    justify-content: center;
+}
+
+.contactenosmain {
+    margin: 20px auto;
+    background-image: url("../imagenes/contactenos.jpg");
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    .imgcontacto {
+        @include caja_perso();
+    }
+}
+
+.encuentrenosmain {
+    @include font();
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.247);
+}
+
+.nosotrosmain {
+    margin: 40px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    .nosotrosimg {
+        background-image: url("../imagenes/nosotros.jpg");
+        width: 800px;
+        height: 600px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        .sobren {
+            color: map-get($map: $colores, $key: 'secondary');
+            font-family: 'Raleway', sans-serif;
+            background-color: rgba(255, 255, 255, 0.685);
+            width: 400px;
+            height: 500px;
+            margin: 20px 10px 20px auto;
+        }
+    }
 }
 
 footer {
     margin-top: 60px;
+    margin-bottom: 0px;
     background-color: $colorbg;
     color: $letra;
     width: 100%;
     p {
-        color: $letra;
+        color: map-get($map: $colores, $key: 'primary');
+        ;
         font-size: 14px;
         margin-top: 20px;
     }
     h3 {
         font-size: 20px;
-        color: $letra;
+        color: map-get($map: $colores, $key: 'primary');
     }
     .row {
         margin-top: 20px;
         display: flex;
-        img {
-            width: 40px;
-            height: 40px;
+        a {
+            padding-left: 20px;
+            text-decoration: none;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
         }
     }
     .row2 {
         margin-top: 20px;
         display: flex;
-        img {
-            width: 40px;
-            height: 40px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+        label {
+            margin-left: 20px;
         }
     }
     label {
         margin-top: 10px;
         margin-left: 20px;
-        color: $letra;
+        color: map-get($map: $colores, $key: 'primary');
     }
     .container-footer-all {
         width: 100%;
         max-width: 1200px;
+        bottom: 0px;
         margin: auto;
     }
     .container-body {
@@ -72,13 +155,47 @@ footer {
     .column1 {
         max-width: 400px;
         margin: auto;
+        @include font();
+        ul {
+            margin-top: 20px;
+        }
     }
     .column2 {
+        @include font();
         max-width: 400px;
         margin: auto;
+        height: 200px;
     }
     .column3 {
+        @include font();
         max-width: 400px;
+        height: 200px;
+        margin: auto;
+        .label {
+            @include font();
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+    .column2,
+    .column3 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .container-body {
+        display: block;
+    }
+    .column2,
+    .column3 {
         margin: auto;
     }
 }
