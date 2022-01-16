@@ -41,14 +41,22 @@ header {
   font-family: 'Raleway', sans-serif;
   background-color: rgba(255, 255, 255, 0.247); }
 
+.encuentrenosTitle {
+  text-align: center; }
+
+.encuentrenosoCaja {
+  max-width: 100%;
+  display: flex;
+  justify-content: center; }
+
 .nosotrosmain {
   margin: 40px 0px 20px 0px;
   display: flex;
   justify-content: center; }
   .nosotrosmain .nosotrosimg {
-    background-image: url("../imagenes/nosotros.jpg");
-    width: 800px;
-    height: 600px;
+    background-image: url("../imagenes/nosotros.jpeg");
+    width: 1000px;
+    height: 800px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -56,10 +64,15 @@ header {
     .nosotrosmain .nosotrosimg .sobren {
       color: black;
       font-family: 'Raleway', sans-serif;
-      background-color: rgba(255, 255, 255, 0.925);
-      width: 400px;
-      height: 500px;
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0.74);
+      width: 500px;
+      height: 700px;
       margin: 20px 10px 20px auto; }
+
+.estrellas ul {
+  display: flex;
+  list-style-image: url(../icon/estrella.png); }
 
 footer {
   margin-top: 60px;
