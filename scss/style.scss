@@ -87,7 +87,7 @@ header {
         .sobren {
             color: map-get($map: $colores, $key: 'secondary');
             font-family: 'Raleway', sans-serif;
-            background-color: rgba(255, 255, 255, 0.685);
+            background-color: rgba(255, 255, 255, 0.925);
             width: 400px;
             height: 500px;
             margin: 20px 10px 20px auto;
@@ -155,6 +155,7 @@ footer {
     .column1 {
         max-width: 400px;
         margin: auto;
+        margin-top: 20px;
         @include font();
         ul {
             margin-top: 20px;
@@ -165,12 +166,14 @@ footer {
         max-width: 400px;
         margin: auto;
         height: 200px;
+        margin-top: 20px;
     }
     .column3 {
         @include font();
         max-width: 400px;
         height: 200px;
         margin: auto;
+        margin-top: 20px;
         .label {
             @include font();
         }

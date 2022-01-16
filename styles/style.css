@@ -56,7 +56,7 @@ header {
     .nosotrosmain .nosotrosimg .sobren {
       color: black;
       font-family: 'Raleway', sans-serif;
-      background-color: rgba(255, 255, 255, 0.685);
+      background-color: rgba(255, 255, 255, 0.925);
       width: 400px;
       height: 500px;
       margin: 20px 10px 20px auto; }
@@ -107,6 +107,7 @@ footer {
   footer .column1 {
     max-width: 400px;
     margin: auto;
+    margin-top: 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 1em; }
     footer .column1 ul {
@@ -116,13 +117,15 @@ footer {
     font-size: 1em;
     max-width: 400px;
     margin: auto;
-    height: 200px; }
+    height: 200px;
+    margin-top: 20px; }
   footer .column3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     max-width: 400px;
     height: 200px;
-    margin: auto; }
+    margin: auto;
+    margin-top: 20px; }
     footer .column3 .label {
       font-family: 'Raleway', sans-serif;
       font-size: 1em; }
