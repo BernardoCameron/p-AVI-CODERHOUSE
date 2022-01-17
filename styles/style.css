@@ -1,160 +1,222 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 * {
-  padding: 0px;
-  margin: 0px; }
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
-  background-image: radial-gradient(circle, #ffffff, #f8f6f8, #f2edf0, #ece4e6, #e7dbdb);
-  border: 0px; }
+    background-image: radial-gradient(circle, #ffffff, #f8f6f8, #f2edf0, #ece4e6, #e7dbdb);
+    border: 0px;
+}
 
 header {
-  background-color: #484848;
-  font-size: 1.5rem;
-  text-transform: uppercase; }
+    background-color: #484848;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
 
 .formulario {
-  margin: auto;
-  text-align: center;
-  color: black; }
+    margin: auto;
+    text-align: center;
+    color: black;
+}
 
 .mainc {
-  display: flex;
-  justify-content: center; }
+    display: flex;
+    justify-content: center;
+}
 
 .contactenosmain {
-  margin: 20px auto;
-  background-image: url("../imagenes/contactenos.jpg");
-  width: 1000px;
-  height: 600px;
-  background-repeat: no-repeat;
-  display: flex; }
-  .contactenosmain .imgcontacto {
+    margin: 20px auto;
+    background-image: url("../imagenes/contactenos.jpg");
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.contactenosmain .imgcontacto {
     font-family: 'Raleway', sans-serif;
     margin: auto;
     width: 400px;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.616); }
+    background-color: rgba(255, 255, 255, 0.616);
+}
 
 .encuentrenosmain {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
-  font-family: 'Raleway', sans-serif;
-  background-color: rgba(255, 255, 255, 0.247); }
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.247);
+}
 
 .encuentrenosTitle {
-  text-align: center; }
+    text-align: center;
+}
 
 .encuentrenosoCaja {
-  max-width: 100%;
-  display: flex;
-  justify-content: center; }
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .nosotrosmain {
-  margin: 40px 0px 20px 0px;
-  display: flex;
-  justify-content: center; }
-  .nosotrosmain .nosotrosimg {
+    margin: 40px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.nosotrosmain .nosotrosimg {
     background-image: url("../imagenes/nosotros.jpeg");
     width: 1000px;
     height: 800px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    margin: auto; }
-    .nosotrosmain .nosotrosimg .sobren {
-      color: black;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      background-color: rgba(255, 255, 255, 0.74);
-      width: 500px;
-      height: 700px;
-      margin: 20px 10px 20px auto; }
+    margin: auto;
+}
+
+.nosotrosmain .nosotrosimg .sobren {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 500px;
+    height: 700px;
+    margin: 20px 10px 20px auto;
+}
 
 .estrellas ul {
-  display: flex;
-  list-style-image: url(../icon/estrella.png); }
+    display: flex;
+    list-style-image: url(../icon/estrella.png);
+}
 
 footer {
-  margin-top: 60px;
-  margin-bottom: 0px;
-  background-color: #484848;
-  color: #dbdbdb;
-  width: 100%; }
-  footer p {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    background-color: #484848;
+    color: #dbdbdb;
+    width: 100%;
+}
+
+footer p {
     color: #dbdbdb;
     font-size: 14px;
-    margin-top: 20px; }
-  footer h3 {
+    margin-top: 20px;
+}
+
+footer h3 {
     font-size: 20px;
-    color: #dbdbdb; }
-  footer .row {
+    color: #dbdbdb;
+}
+
+footer .row {
     margin-top: 20px;
-    display: flex; }
-    footer .row a {
-      padding-left: 20px;
-      text-decoration: none; }
-    footer .row a:link {
-      text-decoration: none; }
-    footer .row a:visited {
-      text-decoration: none; }
-    footer .row a:hover {
-      text-decoration: none; }
-    footer .row a:active {
-      text-decoration: none; }
-  footer .row2 {
+    display: flex;
+}
+
+footer .row a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+footer .row a:link {
+    text-decoration: none;
+}
+
+footer .row a:visited {
+    text-decoration: none;
+}
+
+footer .row a:hover {
+    text-decoration: none;
+}
+
+footer .row a:active {
+    text-decoration: none;
+}
+
+footer .row2 {
     margin-top: 20px;
-    display: flex; }
-    footer .row2 label {
-      margin-left: 20px; }
-  footer label {
+    display: flex;
+}
+
+footer .row2 label {
+    margin-left: 20px;
+}
+
+footer label {
     margin-top: 10px;
     margin-left: 20px;
-    color: #dbdbdb; }
-  footer .container-footer-all {
+    color: #dbdbdb;
+}
+
+footer .container-footer-all {
     width: 100%;
     max-width: 1200px;
     bottom: 0px;
-    margin: auto; }
-  footer .container-body {
-    display: flex; }
-  footer .column1 {
+    margin: auto;
+}
+
+footer .container-body {
+    display: flex;
+}
+
+footer .column1 {
     max-width: 400px;
     margin: auto;
     margin-top: 20px;
     font-family: 'Raleway', sans-serif;
-    font-size: 1em; }
-    footer .column1 ul {
-      margin-top: 20px; }
-  footer .column2 {
+    font-size: 1em;
+}
+
+footer .column1 ul {
+    margin-top: 20px;
+}
+
+footer .column2 {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     max-width: 400px;
     margin: auto;
     height: 200px;
-    margin-top: 20px; }
-  footer .column3 {
+    margin-top: 20px;
+}
+
+footer .column3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     max-width: 400px;
     height: 200px;
     margin: auto;
-    margin-top: 20px; }
-    footer .column3 .label {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1em; }
-  footer .copyright {
-    text-align: center; }
+    margin-top: 20px;
+}
+
+footer .column3 .label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+footer .copyright {
+    text-align: center;
+}
 
 @media screen and (max-width: 1100px) {
-  .container-body {
-    flex-wrap: wrap; }
-  .column2,
-  .column3 {
-    margin: auto; } }
+    .container-body {
+        flex-wrap: wrap;
+    }
+    .column2,
+    .column3 {
+        margin: auto;
+    }
+}
 
 @media screen and (max-width: 715px) {
-  .container-body {
-    display: block; }
-  .column2,
-  .column3 {
-    margin: auto; } }
+    .container-body {
+        display: block;
+    }
+    .column2,
+    .column3 {
+        margin: auto;
+    }
+}
