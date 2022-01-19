@@ -1,0 +1,23 @@
+.mainc {
+    display: flex;
+    justify-content: center;
+}
+
+.contactenosmain {
+    margin: 20px auto;
+    background-image: url("../imagenes/contactenos.jpg");
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    .imgcontacto {
+        @include caja_perso();
+    }
+}
+
+.formulario {
+    margin: auto;
+    text-align: center;
+    color: map-get($map: $colores, $key: 'secondary');
+    ;
+}

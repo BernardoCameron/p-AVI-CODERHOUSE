@@ -1,0 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: radial-gradient(circle, #ffffff, #f8f6f8, #f2edf0, #ece4e6, #e7dbdb);
+    border: 0px;
+}
+
+header {
+    background-color: $colorbg;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

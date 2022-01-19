@@ -1,0 +1,107 @@
+footer {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    background-color: $colorbg;
+    color: $letra;
+    width: 100%;
+    p {
+        color: map-get($map: $colores, $key: 'primary');
+        ;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 20px;
+        color: map-get($map: $colores, $key: 'primary');
+    }
+    .row {
+        margin-top: 20px;
+        display: flex;
+        a {
+            padding-left: 20px;
+            text-decoration: none;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+    }
+    .row2 {
+        margin-top: 20px;
+        display: flex;
+        label {
+            margin-left: 20px;
+        }
+    }
+    label {
+        margin-top: 10px;
+        margin-left: 20px;
+        color: map-get($map: $colores, $key: 'primary');
+    }
+    .container-footer-all {
+        width: 100%;
+        max-width: 1200px;
+        bottom: 0px;
+        margin: auto;
+    }
+    .container-body {
+        display: flex;
+    }
+    .column1 {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 20px;
+        @include font();
+        ul {
+            margin-top: 20px;
+        }
+    }
+    .column2 {
+        @include font();
+        max-width: 400px;
+        margin: auto;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .column3 {
+        @include font();
+        max-width: 400px;
+        height: 200px;
+        margin: auto;
+        margin-top: 20px;
+        .label {
+            @include font();
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+    .column2,
+    .column3 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .container-body {
+        display: block;
+    }
+    .column2,
+    .column3 {
+        margin: auto;
+    }
+}
