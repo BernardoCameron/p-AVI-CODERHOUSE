@@ -5,16 +5,28 @@
 
 body {
   background-image: radial-gradient(circle, #ffffff, #f8f6f8, #f2edf0, #ece4e6, #e7dbdb);
-  border: 0px; }
+  border: 0px;
+  padding-bottom: 400px; }
 
 header {
   background-color: #484848;
   font-size: 1.5rem;
   text-transform: uppercase; }
 
+html {
+  min-height: 100%;
+  position: relative; }
+
+.indexMain {
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  margin: auto; }
+
 .mainc {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 .contactenosmain {
   margin: 20px auto;
@@ -30,52 +42,85 @@ header {
     height: 300px;
     background-color: rgba(255, 255, 255, 0.616); }
 
+.texto {
+  margin-top: 120px;
+  width: 400px;
+  height: 300px; }
+
 .formulario {
-  margin: auto;
   text-align: center;
-  color: black; }
+  color: black;
+  margin: 30px; }
+
+@media screen and (max-width: 700px) {
+  .mainc {
+    display: block; }
+  .texto {
+    margin: auto;
+    margin-top: 20px; } }
 
 .encuentrenosmain {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   font-family: 'Raleway', sans-serif;
-  background-color: rgba(255, 255, 255, 0.247); }
+  display: flex;
+  justify-content: center; }
 
 .encuentrenosTitle {
   text-align: center; }
 
-.encuentrenosoCaja {
-  max-width: 100%;
-  display: flex;
-  justify-content: center; }
+.encuentrenosCaja {
+  width: 20rem;
+  height: 10rem;
+  margin: 30px auto;
+  text-align: center; }
 
-.nosotrosmain {
-  margin: 40px 0px 20px 0px;
+.mapa {
+  margin: auto; }
+
+@media screen and (max-width: 700px) {
+  .encuentrenosmain {
+    display: block; } }
+
+.nosotrosMain {
   display: flex;
   justify-content: center; }
-  .nosotrosmain .nosotrosimg {
-    background-image: url("../imagenes/nosotros.jpeg");
-    width: 1000px;
-    height: 800px;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    margin: auto; }
-    .nosotrosmain .nosotrosimg .sobren {
-      color: black;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      background-color: rgba(255, 255, 255, 0.74);
-      width: 500px;
-      height: 700px;
-      margin: 20px 10px 20px auto; }
+  .nosotrosMain .textoNosotros {
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+    margin-top: 20px; }
+  .nosotrosMain .fotoNosotros {
+    width: 600px;
+    height: 700px;
+    margin-top: 20px; }
+    .nosotrosMain .fotoNosotros img {
+      width: 600px;
+      height: 500px;
+      margin-right: 20px; }
+
+@media screen and (max-width: 700px) {
+  .nosotrosMain {
+    display: block; }
+    .nosotrosMain .textoNosotros {
+      margin-top: 5px;
+      margin: auto; }
+    .nosotrosMain .fotoNosotros {
+      margin-top: 10px;
+      width: 400px;
+      height: 400px;
+      margin: auto; }
+      .nosotrosMain .fotoNosotros img {
+        width: 400px;
+        height: 400px; } }
 
 footer {
-  margin-top: 60px;
-  margin-bottom: 0px;
+  bottom: 0px;
+  position: absolute;
   background-color: #484848;
   color: #dbdbdb;
-  width: 100%; }
+  width: 100%;
+  height: 270px; }
   footer p {
     color: #dbdbdb;
     font-size: 14px;
@@ -84,20 +129,26 @@ footer {
     font-size: 20px;
     color: #dbdbdb; }
   footer .row {
+    font-family: 'Raleway', sans-serif;
     margin-top: 20px;
     display: flex; }
     footer .row a {
       padding-left: 20px;
       text-decoration: none; }
     footer .row a:link {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
     footer .row a:visited {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
     footer .row a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
     footer .row a:active {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
   footer .row2 {
+    font-family: 'Raleway', sans-serif;
     margin-top: 20px;
     display: flex; }
     footer .row2 label {
@@ -109,10 +160,11 @@ footer {
   footer .container-footer-all {
     width: 100%;
     max-width: 1200px;
-    bottom: 0px;
+    margin-bottom: 10px;
     margin: auto; }
   footer .container-body {
-    display: flex; }
+    display: flex;
+    background-color: #484848; }
   footer .column1 {
     max-width: 400px;
     margin: auto;
@@ -123,6 +175,7 @@ footer {
       margin-top: 20px; }
   footer .column2 {
     font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
     max-width: 400px;
     margin: auto;
@@ -130,15 +183,17 @@ footer {
     margin-top: 20px; }
   footer .column3 {
     font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
     max-width: 400px;
     height: 200px;
     margin: auto;
-    margin-top: 20px; }
+    margin-top: 17px; }
     footer .column3 .label {
       font-family: 'Raleway', sans-serif;
       font-size: 1em; }
   footer .copyright {
+    margin-bottom: 10px;
     text-align: center; }
 
 @media screen and (max-width: 1100px) {
@@ -149,8 +204,20 @@ footer {
     margin: auto; } }
 
 @media screen and (max-width: 715px) {
+  .container-footer-all {
+    display: block; }
   .container-body {
     display: block; }
   .column2,
   .column3 {
     margin: auto; } }
+
+.indexMain {
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px; }
+  .indexMain .textoMain {
+    text-align: center;
+    font-family: 'Raleway', sans-serif; }

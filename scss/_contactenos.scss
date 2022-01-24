@@ -1,6 +1,7 @@
 .mainc {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .contactenosmain {
@@ -15,9 +16,24 @@
     }
 }
 
+.texto {
+    margin-top: 120px;
+    width: 400px;
+    height: 300px;
+}
+
 .formulario {
-    margin: auto;
     text-align: center;
     color: map-get($map: $colores, $key: 'secondary');
-    ;
+    margin: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .mainc {
+        display: block;
+    }
+    .texto {
+        margin: auto;
+        margin-top: 20px;
+    }
 }

@@ -1,9 +1,10 @@
 footer {
-    margin-top: 60px;
-    margin-bottom: 0px;
+    bottom: 0px;
+    position: absolute;
     background-color: $colorbg;
     color: $letra;
     width: 100%;
+    height: 270px;
     p {
         color: map-get($map: $colores, $key: 'primary');
         ;
@@ -15,6 +16,7 @@ footer {
         color: map-get($map: $colores, $key: 'primary');
     }
     .row {
+        font-family: 'Raleway', sans-serif;
         margin-top: 20px;
         display: flex;
         a {
@@ -23,18 +25,23 @@ footer {
         }
         a:link {
             text-decoration: none;
+            color: white;
         }
         a:visited {
             text-decoration: none;
+            color: white;
         }
         a:hover {
             text-decoration: none;
+            color: white;
         }
         a:active {
             text-decoration: none;
+            color: white;
         }
     }
     .row2 {
+        font-family: 'Raleway', sans-serif;
         margin-top: 20px;
         display: flex;
         label {
@@ -49,11 +56,12 @@ footer {
     .container-footer-all {
         width: 100%;
         max-width: 1200px;
-        bottom: 0px;
+        margin-bottom: 10px;
         margin: auto;
     }
     .container-body {
         display: flex;
+        background-color: $colorbg;
     }
     .column1 {
         max-width: 400px;
@@ -65,6 +73,7 @@ footer {
         }
     }
     .column2 {
+        font-family: 'Raleway', sans-serif;
         @include font();
         max-width: 400px;
         margin: auto;
@@ -72,16 +81,18 @@ footer {
         margin-top: 20px;
     }
     .column3 {
+        font-family: 'Raleway', sans-serif;
         @include font();
         max-width: 400px;
         height: 200px;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 17px;
         .label {
             @include font();
         }
     }
     .copyright {
+        margin-bottom: 10px;
         text-align: center;
     }
 }
@@ -97,6 +108,9 @@ footer {
 }
 
 @media screen and (max-width: 715px) {
+    .container-footer-all {
+        display: block;
+    }
     .container-body {
         display: block;
     }
