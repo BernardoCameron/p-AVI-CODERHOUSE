@@ -20,10 +20,17 @@
 }
 
 @media screen and (max-width: 715px) {
+    .indexMain {
+        max-width: 400px;
+    }
+    .textoMain {
+        max-width: 400px;
+    }
     .carruselIndex {
+        width: 400px;
         img {
-            width: 500px;
-            height: 500px;
+            width: 350px;
+            height: 350px;
         }
     }
 }
